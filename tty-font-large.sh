@@ -45,8 +45,9 @@ fonts=(
 echo "Select a Terminus font:"
 echo ""
 for i in "${!fonts[@]}"; do
+  name="${fonts[$i]%%:*}"
   desc="${fonts[$i]#*:}"
-  printf "  %2d) %s\n" "$((i + 1))" "$desc"
+  printf "  %2d) %-10s  %s\n" "$((i + 1))" "$name" "$desc"
 done
 echo ""
 echo "   0) Cancel"
