@@ -25,3 +25,17 @@ Scripts must be run directly in a TTY (Ctrl+Alt+F1-F6), not in a terminal emulat
 - TTY color escape sequence format: `\e]Pnrrggbb` where n=0-F (hex) for 16-color palette
 - Font naming: `ter-[type][size][style]` (e.g., `ter-v32b` = VGA-compatible 32px bold)
 - Theme source reference: `~/utono/themes/.config/themes/theme-order.txt`
+
+## Memory Bank System
+
+This project uses a structured memory bank system. Always check these context
+files before starting work, and keep them updated as the project evolves:
+
+- **CLAUDE-activeContext.md** — current session state, goals, and progress
+- **CLAUDE-patterns.md** — established code patterns and conventions
+- **CLAUDE-decisions.md** — architecture decisions and rationale
+- **CLAUDE-troubleshooting.md** — common issues and proven solutions
+- **CLAUDE-config-variables.md** — configuration variables reference
+
+Always read **CLAUDE-activeContext.md** first to maintain session continuity.
+When you change core context, update the relevant memory bank file.
